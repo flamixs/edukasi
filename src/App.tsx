@@ -31,6 +31,7 @@ const App: React.FC = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
   const [currentImage, setCurrentImage] = useState<number>(0);
   const images = ['/1.jpeg', '/2.jpeg']; // Path relatif ke folder public
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     setIsVisible(true);
@@ -45,7 +46,12 @@ const App: React.FC = () => {
       <div className={`app-container ${isVisible ? 'fade-in' : ''}`}>
         <header className="app-header card blue-card">
           <h1 className="logo-animate">PendidikanKita</h1>
-          <nav>
+          <div className="mobile-menu">
+            <button className="mobile-menu-button" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+              ☰
+            </button>
+          </div>
+          <nav className={`mobile-menu-content ${mobileMenuOpen ? 'show' : ''}`}>
             <Link to="/" className="nav-link-animate">Beranda</Link>
             <Link to="/ujian" className="nav-link-animate">Lembar Ujian</Link>
             <a href="#fitur" className="nav-link-animate">Fitur</a>

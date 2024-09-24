@@ -107,3 +107,35 @@
 .tombol-kembali:hover {
   background-color: #e0e0e0;
 }
+
+@media (max-width: 768px) {
+  .lembar-ujian {
+    padding: 10px;
+  }
+
+  .daftar-ujian {
+    flex-direction: column;
+  }
+
+  .ujian-card {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .soal {
+    padding: 10px;
+  }
+
+  .soal button {
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .tombol-selesai {
+    width: 100%;
+  }
+
+  .hasil {
+    padding: 15px;
+  }
+}
