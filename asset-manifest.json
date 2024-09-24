@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/edukasi/static/css/main.263d1167.css",
+    "main.js": "/edukasi/static/js/main.563ce982.js",
+    "index.html": "/edukasi/index.html",
+    "main.263d1167.css.map": "/edukasi/static/css/main.263d1167.css.map",
+    "main.563ce982.js.map": "/edukasi/static/js/main.563ce982.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.263d1167.css",
+    "static/js/main.563ce982.js"
+  ]
+}
