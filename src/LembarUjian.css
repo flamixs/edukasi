@@ -1,0 +1,109 @@
+.lembar-ujian {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  opacity: 1; /* Ubah jadi 1 */
+  transform: translateY(0); /* Hapus translateY */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Hapus atau komentarin class .lembar-ujian.show kalo gak dipake */
+
+.daftar-ujian {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.ujian-card {
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ujian-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+}
+
+.ujian-card h2 {
+  margin-top: 0;
+  color: #4a90e2;
+}
+
+.ujian-card p {
+  color: #333; /* Tambahin ini buat mastiin teks deskripsi keliatan */
+}
+
+.soal {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+}
+
+.soal p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.soal button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.soal button:hover {
+  background-color: #e0e0e0;
+}
+
+.pilihan-aktif {
+  background-color: #4a90e2 !important;
+  color: #fff;
+}
+
+.tombol-selesai {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.hasil {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #e8f5e9;
+  border-radius: 8px;
+}
+
+.tombol-kembali {
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tombol-kembali:hover {
+  background-color: #e0e0e0;
+}
